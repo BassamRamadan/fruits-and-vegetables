@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidNaskh-Bold.ttf">
+            <string>DroidArabicNaskh-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomBar" customModule="fruitsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GMf-bn-86l">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abJ-47-Zow">
+                    <rect key="frame" x="364" y="49" width="30" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="QCx-Rc-9OU"/>
+                        <constraint firstAttribute="height" constant="40" id="hpp-jA-D5p"/>
+                    </constraints>
+                    <state key="normal" image="ic_menu0"/>
+                </button>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngV-iQ-jnO" customClass="ButtonShadow" customModule="fruitsApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="49" width="45" height="45"/>
+                    <color key="backgroundColor" name="Walnut"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="RKQ-SK-RHj"/>
+                        <constraint firstAttribute="width" constant="45" id="ZQe-UM-0wA"/>
+                    </constraints>
+                    <state key="normal" image="ic_cart"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7P-Dg-HoP">
+                    <rect key="frame" x="65" y="104" width="299" height="777"/>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z82-Wp-Fb9">
+                    <rect key="frame" x="60" y="46" width="25" height="25"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Y9L-IS-izv"/>
+                        <constraint firstAttribute="width" constant="25" id="g72-PS-ZDa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="z82-Wp-Fb9" firstAttribute="top" secondItem="ngV-iQ-jnO" secondAttribute="top" constant="-3" id="4v6-Nj-Cbm"/>
+                <constraint firstItem="ngV-iQ-jnO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6Ga-d1-fSB"/>
+                <constraint firstItem="z82-Wp-Fb9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="AXc-0p-Rij"/>
+                <constraint firstItem="GMf-bn-86l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D09-KC-iu6"/>
+                <constraint firstItem="abJ-47-Zow" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="EhL-0F-wgI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="abJ-47-Zow" secondAttribute="trailing" constant="20" id="ITb-pL-Lny"/>
+                <constraint firstAttribute="bottom" secondItem="GMf-bn-86l" secondAttribute="bottom" id="NlE-1w-mHa"/>
+                <constraint firstItem="A7P-Dg-HoP" firstAttribute="leading" secondItem="ngV-iQ-jnO" secondAttribute="trailing" id="UGM-lP-0Km"/>
+                <constraint firstItem="GMf-bn-86l" firstAttribute="bottom" secondItem="A7P-Dg-HoP" secondAttribute="bottom" constant="15" id="fPy-Ry-bzH"/>
+                <constraint firstItem="GMf-bn-86l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gq2-V5-0NJ"/>
+                <constraint firstItem="ngV-iQ-jnO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="hwJ-3Y-XBN"/>
+                <constraint firstItem="A7P-Dg-HoP" firstAttribute="top" secondItem="abJ-47-Zow" secondAttribute="bottom" constant="15" id="twU-t3-Djd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GMf-bn-86l" secondAttribute="trailing" id="we6-FB-YI0"/>
+                <constraint firstItem="A7P-Dg-HoP" firstAttribute="trailing" secondItem="abJ-47-Zow" secondAttribute="leading" id="yTB-SV-CXo"/>
+            </constraints>
+            <connections>
+                <outlet property="cartItems" destination="z82-Wp-Fb9" id="HJA-7r-16H"/>
+                <outlet property="leftbarButton" destination="ngV-iQ-jnO" id="xID-P0-UDq"/>
+                <outlet property="rightbarButton" destination="abJ-47-Zow" id="KPU-QU-QAD"/>
+                <outlet property="title" destination="A7P-Dg-HoP" id="1C7-53-UHB"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="action_bg" width="597" height="148"/>
+        <image name="ic_cart" width="24" height="24"/>
+        <image name="ic_menu0" width="24" height="24"/>
+        <namedColor name="Walnut">
+            <color red="0.41568627450980394" green="0.2196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

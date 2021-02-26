@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidNaskh-Bold.ttf">
+            <string>DroidArabicNaskh-Bold</string>
+        </array>
+        <array key="DroidNaskh-Regular.ttf">
+            <string>DroidArabicNaskh</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactUs" customModule="fruitsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="userBody" destination="in9-0O-Hya" id="STv-QL-3fn"/>
+                <outlet property="userName" destination="iWZ-K7-3bV" id="7NZ-dH-hAL"/>
+                <outlet property="userPhone" destination="hUa-aE-1QG" id="o4D-2m-htW"/>
+                <outlet property="view" destination="2Zf-9N-Aq2" id="81v-1P-UFl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="2Zf-9N-Aq2">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="617"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYO-WM-pMa">
+                    <rect key="frame" x="333" y="20" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="l04-6U-woQ"/>
+                        <constraint firstAttribute="height" constant="25" id="sde-Xs-oJw"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_close"/>
+                    <connections>
+                        <action selector="close" destination="-1" eventType="touchUpInside" id="r9t-Gt-qUv"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PUZ-Tr-BkQ">
+                    <rect key="frame" x="20" y="65" width="338" height="467"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f7w-fL-OKP">
+                            <rect key="frame" x="0.0" y="0.0" width="338" height="102"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="مراسلة الإدارة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjD-31-9bI">
+                                    <rect key="frame" x="123.5" y="0.0" width="91.5" height="51"/>
+                                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="19"/>
+                                    <color key="textColor" name="Walnut"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سيتم التواصل معكم فى أقرب وقت" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rws-7k-p1V">
+                                    <rect key="frame" x="81.5" y="56" width="175" height="46"/>
+                                    <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="15"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWZ-K7-3bV" customClass="TextFieldShadow" customModule="fruitsApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="117" width="338" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="qbt-dT-QWg"/>
+                            </constraints>
+                            <color key="textColor" name="Walnut"/>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-aE-1QG" customClass="TextFieldShadow" customModule="fruitsApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="187" width="338" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Vi9-xD-Tte"/>
+                            </constraints>
+                            <color key="textColor" name="Walnut"/>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="الرسالة" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="in9-0O-Hya" customClass="TextViewShadow" customModule="fruitsApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="257" width="338" height="140"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="7zT-Mb-1Xc"/>
+                            </constraints>
+                            <color key="textColor" name="Walnut"/>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-Le-PGh" customClass="ButtonShadow" customModule="fruitsApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="412" width="338" height="55"/>
+                            <color key="backgroundColor" name="yellow"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="srq-oT-xxf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="17"/>
+                            <state key="normal" title="إرسال">
+                                <color key="titleColor" systemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="AlamofireUploadWithSender:" destination="-1" eventType="touchUpInside" id="rn3-uo-rZ1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XKv-T6-hR3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FYO-WM-pMa" firstAttribute="top" secondItem="2Zf-9N-Aq2" secondAttribute="top" constant="20" id="KD4-bV-mvI"/>
+                <constraint firstItem="PUZ-Tr-BkQ" firstAttribute="top" secondItem="FYO-WM-pMa" secondAttribute="bottom" constant="20" id="NmG-z4-eB6"/>
+                <constraint firstItem="PUZ-Tr-BkQ" firstAttribute="leading" secondItem="2Zf-9N-Aq2" secondAttribute="leading" constant="20" id="YLz-D3-cIF"/>
+                <constraint firstAttribute="trailing" secondItem="FYO-WM-pMa" secondAttribute="trailing" constant="20" id="cRt-l5-EIU"/>
+                <constraint firstAttribute="trailing" secondItem="PUZ-Tr-BkQ" secondAttribute="trailing" constant="20" id="cz4-vR-9dN"/>
+                <constraint firstAttribute="height" secondItem="PUZ-Tr-BkQ" secondAttribute="height" constant="150" id="zBD-7j-3C0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-8.6956521739130448" y="32.477678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close" width="24" height="24"/>
+        <namedColor name="Walnut">
+            <color red="0.41568627450980394" green="0.2196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellow">
+            <color red="0.99607843137254903" green="0.85490196078431369" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
