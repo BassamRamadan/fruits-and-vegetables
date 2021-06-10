@@ -28,7 +28,6 @@
 import UIKit
 
 class NVActivityIndicatorAnimationBallPulseSync: NVActivityIndicatorAnimationDelegate {
-
     func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
         let circleSpacing: CGFloat = 2
         let circleSize = (size.width - circleSpacing * 2) / 3
@@ -54,9 +53,10 @@ class NVActivityIndicatorAnimationBallPulseSync: NVActivityIndicatorAnimationDel
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false
 
+        let colors = [#colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1),#colorLiteral(red: 0.1979719996, green: 0.7683720589, blue: 0.6750965714, alpha: 1),#colorLiteral(red: 1, green: 0.707152307, blue: 0.1903417408, alpha: 1)]
         // Draw circles
         for i in 0 ..< 3 {
-            let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
+            let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: circleSize, height: circleSize), color: colors[i])
             let frame = CGRect(x: x + circleSize * CGFloat(i) + circleSpacing * CGFloat(i),
                                y: y,
                                width: circleSize,
@@ -68,4 +68,5 @@ class NVActivityIndicatorAnimationBallPulseSync: NVActivityIndicatorAnimationDel
             layer.addSublayer(circle)
         }
     }
+
 }

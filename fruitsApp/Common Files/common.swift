@@ -57,8 +57,8 @@ class common : UIViewController , NVActivityIndicatorViewable{
     }
     
     func loading(_ message:String = ""){
-        let size = CGSize(width: 30, height: 30)
-        startAnimating(size, message: "", type: NVActivityIndicatorType.lineSpinFadeLoader)
+        let size = CGSize(width: 35, height: 35)
+        startAnimating(size, message: "", type: NVActivityIndicatorType.ballPulseSync)
     }
     
     class func makeAlert( message: String = "عفوا حدث خطأ في الاتصال من فضلك حاول مره آخري") -> UIAlertController {
