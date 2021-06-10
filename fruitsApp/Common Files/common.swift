@@ -57,7 +57,7 @@ class common : UIViewController , NVActivityIndicatorViewable{
     }
     
     func loading(_ message:String = ""){
-        let size = CGSize(width: 35, height: 35)
+        let size = CGSize(width: 50, height: 50)
         startAnimating(size, message: "", type: NVActivityIndicatorType.ballPulseSync)
     }
     
